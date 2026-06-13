@@ -1,0 +1,135 @@
+.container {
+    padding: 40px 10%;
+}
+
+.breadcrumb {
+    margin-bottom: 40px;
+    color: #7D8184;
+    font-size: 14px;
+}
+
+.cart-table {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.table-header, .table-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    align-items: center;
+    padding: 20px 40px;
+    background: white;
+    box-shadow: 0 1px 13px rgba(0,0,0,0.05);
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.table-header {
+    font-weight: 500;
+}
+
+.product-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.img-wrapper {
+    position: relative;
+    width: 50px;
+}
+
+.img-wrapper img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.remove-item {
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    background: #DB4444;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    padding: 2px;
+}
+
+.quantity input {
+    width: 60px;
+    padding: 8px;
+    border: 1.5px solid #7D8184;
+    border-radius: 4px;
+}
+
+.cart-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.secondary-btn {
+    border: 1px solid rgba(0,0,0,0.5);
+    padding: 12px 40px;
+    background: transparent;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.primary-btn {
+    background: #DB4444;
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cart-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.coupon-section {
+    display: flex;
+    gap: 15px;
+}
+
+.coupon-section input {
+    border: 1px solid black;
+    padding: 12px;
+    width: 250px;
+    border-radius: 4px;
+}
+
+.cart-total-card {
+    border: 1.5px solid black;
+    padding: 30px;
+    width: 400px;
+    border-radius: 4px;
+}
+
+.total-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.total-row.final {
+    border-bottom: none;
+    font-weight: 600;
+}
+
+.checkout {
+    width: 100%;
+    margin-top: 20px;
+}

@@ -1,0 +1,1380 @@
+.Navbar {
+background-color: black;
+color: white;
+display: flex; 
+justify-content: center; 
+padding: 15px; 
+align-items: center;
+
+}
+.Navbar p {
+margin-right: 100px;
+}
+spam{
+    margin-left: 10px;
+    font-size: 20px;
+}
+.en{
+    margin-left: 200px;
+    border: none;
+    background-color: #000000;
+    color: white;
+
+}
+
+.ex{
+    font-size: 24px;
+}
+.ul-div{
+    display: flex;
+    gap: 350px;
+    padding: 25px;
+
+    color: black;
+}
+ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+li {
+    
+     list-style: none;
+}
+a{ 
+      text-decoration: none;
+}
+.p-dev{
+display: flex;
+gap: 100px;
+margin: 30px;
+}
+h3{
+    padding-bottom: 10px;
+}
+.iphone {
+  width: 100%;
+  max-width: 892px; /* desktop limit */
+  height: auto;
+  display: block;
+}
+.To{
+    color: #DB4444;
+    font-size: 16px;
+    margin-left: 20px;
+}
+.soxat-div{
+    display: flex;
+align-items: center;
+    gap: 50px;
+}
+.card-wrapper {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: center;
+  
+}
+
+.card-div {
+  width: 270px;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.card-img-container {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  background-color: #F5F5F5;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.card-img {
+  max-width: 180px;
+  object-fit: contain;
+}
+
+/* Chegirma belgisi */
+.discount-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background-color: #DB4444;
+  color: white;
+  padding: 4px 12px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+/* O'ng tarafdagi ikonka tugmalari */
+.card-icons {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.icon-circle {
+  background: white;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* "Add to Cart" knopkasi (hover bo'lganda chiqadi) */
+.add-to-cart {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: none; /* Odatiy holatda ko'rinmaydi */
+}
+
+.card-img-container:hover .add-to-cart {
+  display: block;
+}
+
+/* Matn stillari */
+.card-info {
+  padding-top: 16px;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+}
+
+.price-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.card-price {
+  color: #DB4444;
+  font-weight: bold;
+  margin: 0;
+}
+
+.old-price {
+  color: #7D8184;
+  text-decoration: line-through;
+  margin: 0;
+}
+
+.rating {
+  margin-top: 8px;
+  color: #FFAD33; /* Sariq rang */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rating-count {
+  color: #7D8184;
+  font-size: 14px;
+}
+.btn-all{
+    background-color: #DB4444;
+    color: #FAFAFA;
+    border: none;
+    width: 240px;
+    height: 55px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left:650px;
+    border-radius: 4px;
+}
+.btn-all:hover{
+    background-color: white;
+    color: #DB4444;
+}
+.div-icon{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 30px;
+margin: 50px;
+}
+/* Asosiy konteyner - barcha bloklarni yonma-yon joylashtiradi */
+.div-icon {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Bloklar orasidagi masofa */
+  flex-wrap: wrap;
+  padding: 40px 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Har bir kategoriya kvadrati */
+.div-icon-titel {
+  width: 170px;
+  height: 145px;
+  border: 1px solid rgba(0, 0, 0, 0.3); /* Kulrang hoshiya */
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Silliq o'zgarish uchun */
+  background-color: #ffffff;
+}
+
+/* Ikonka stili */
+.icon {
+  font-size: 56px; /* Ikonka kattaligi */
+  margin-bottom: 16px;
+  stroke-width: 1px; /* Agar ikonka juda qalin bo'lsa */
+}
+
+/* Kategoriya nomi (h2) */
+.div-icon-titel h2 {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  color: #000000;
+}
+
+/* SICHQONCHA USTIGA KELGANDA (Hover effekti) */
+.div-icon-titel:hover {
+  background-color: #DB4444; /* Rasmdagi qizil rang */
+  border-color: #DB4444;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover bo'lganda ikonka va matn oq rangga o'tadi */
+.div-icon-titel:hover .icon,
+.div-icon-titel:hover h2 {
+  color: #ffffff;
+}
+.category-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 20px 0;
+  font-family: 'Inter', sans-serif; /* Yoki boshqa sans-serif shrift */
+  margin-left: 100px;
+  /* margin: 100px; */
+}
+.category-header-nima {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 20px 0;
+  font-family: 'Inter', sans-serif; /* Yoki boshqa sans-serif shrift */
+  margin-left: 100px;
+  margin: 100px;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+/* Chap taraf: Subtitle va Title */
+.header-left {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.subtitle-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.red-rect {
+  width: 16px;
+  height: 32px;
+  background-color: #DB4444; /* Rasmdagi qizil rang */
+  border-radius: 4px;
+}
+
+.subtitle {
+  color: #DB4444;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.title {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 600;
+  color: #000;
+}
+
+/* O'ng taraf: Tugmalar */
+.header-right {
+  display: flex;
+  gap: 8px;
+}
+
+.nav-btn {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: none;
+  background-color: #F5F5F5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.nav-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.nav-btn svg {
+  width: 20px;
+  height: 20px;
+  color: #000;
+}
+.nimadir{
+    color: white;
+    background-color: #DB4444;
+    border-radius: 4px;
+    width: 159px;
+    height: 56px;
+    border:  none;
+}
+.nimadir:hover{
+    color: #DB4444;
+    background-color: #7D8184;
+}
+.imagela{
+    width: 1170px;
+    height: 500px;
+    margin: 50px;
+    margin-left: 160px;
+}
+.imagela {
+    display: flex;
+ gap: 100px;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  max-width: 260px;
+}
+
+/* Doiralar */
+.icon-wrapper {
+  margin-bottom: 24px;
+}
+
+.icon-circle-outer {
+  width: 70px;
+  height: 70px;
+  background-color: #C1C1C1; /* Tashqi kulrang doira */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-circle-inner {
+  width: 54px;
+  height: 54px;
+  background-color: #000; /* Ichki qora doira */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+/* Matnlar */
+.service-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  color: #000;
+}
+
+.service-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  margin: 0;
+}
+
+
+.footer {
+  background: #000;
+  color: #fff;
+  padding: 80px 5% 24px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
+}
+
+.footer-col h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.footer-col h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-col p,
+.footer-col li,
+.save-text {
+  font-size: 14px;
+  color: #bdbdbd;
+  line-height: 1.7;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.subscribe-box {
+  margin-top: 15px;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 4px;
+}
+category-header
+
+.subscribe-box input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  flex: 1;
+}
+
+.subscribe-box img {
+  width: 20px;
+  cursor: pointer;
+}
+
+.app-box {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.qr {
+  width: 80px;
+}
+
+.stores img {
+  width: 120px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.socials {
+  display: flex;
+  gap: 15px;
+}
+
+.socials img {
+  width: 20px;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #222;
+  margin-top: 40px;
+  padding-top: 15px;
+  font-size: 13px;
+  color: #777;
+}
+
+
+.flash {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin: 40px 0;
+  font-family: Arial, sans-serif;
+  margin-left: 100px;
+}
+
+.flash h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #000;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.time div {
+  text-align: center;
+}
+
+.time p {
+  font-size: 12px;
+  color: #777;
+  margin-bottom: 4px;
+}
+
+.time h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #000;
+}
+
+.time span {
+  font-size: 28px;
+  font-weight: bold;
+  color: #db4444;
+  margin-top: 18px;
+}
+.user-menu-wrapper {
+  position: relative;
+  display: inline-block;
+  padding: 10px; /* Sichqoncha uzilib qolmasligi uchun */
+}
+
+/* Qizil doira */
+.profile-trigger {
+  width: 36px;
+  height: 36px;
+  background-color: #db4444;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+/* Dropdown asosiy bloki */
+.dropdown-container {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 230px;
+  padding-top: 10px; /* Tugma va menyu orasidagi bo'shliq */
+  
+  /* Yashirish */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+/* Hover bo'lganda ko'rsatish */
+.user-menu-wrapper:hover .dropdown-container {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Menyu ichki dizayni */
+.dropdown-content {
+  background: linear-gradient(
+    135deg, 
+    rgba(130, 110, 130, 0.9) 0%, 
+    rgba(0, 0, 0, 0.85) 100%
+  );
+  backdrop-filter: blur(15px); /* Xiralashtirish */
+  border-radius: 4px;
+  padding: 15px 0;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Har bir qator */
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.menu-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.menu-item span {
+  white-space: nowrap;
+}
+
+/* Menu item button styling */
+.menu-item.button,
+.dropdown-content button.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 20px;
+  color: white;
+  background: none;
+  border: none;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  transition: background 0.2s;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+.dropdown-content button.menu-item:hover,
+.dropdown-content a.menu-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.language-switcher {
+  display: flex;
+  gap: 10px;
+  background-color: #f5f5f5;
+  padding: 6px 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  align-items: center;
+  justify-content: center;
+}
+
+.lang-btn {
+  padding: 6px 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #333333;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.lang-btn:hover {
+  background-color: #007bff;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.lang-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+
+
+.not-found-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  text-align: center;
+  grid-column: 1 / -1; /* Grid ishlatgan bo'lsangiz, butun qatorni egallaydi */
+}
+
+.not-found-container h3 {
+  font-size: 24px;
+  margin: 20px 0 10px;
+  color: #333;
+}
+
+.not-found-container p {
+  color: #7d7d7d;
+  margin-bottom: 20px;
+}
+
+.not-found-container .btn-all {
+  margin-top: 10px;
+  background-color: #db4444;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+
+/* @media (max-width: 480px) {
+  .p-dev{
+display: block;
+  }
+.iphone{
+  display: block;
+
+}
+.header-nav{
+width: 20px;
+}
+} */
+/* --- iPhone 14 (390px) va mobil qurilmalar uchun moslashtirish --- */
+@media screen and (max-width: 480px) {
+    
+    /* 1. Navbar va Til tanlash qismi */
+    .Navbar {
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .Navbar p {
+        margin-right: 0;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .en {
+        margin-left: 0;
+    }
+
+    /* 2. Menu va Logo qismi (ul-div) */
+    .ul-div {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        padding: 15px;
+    }
+
+    ul {
+        gap: 20px;
+        padding: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* 3. Banner (iPhone rasmi bor joy) */
+    .p-dev {
+        display: block;
+        margin: 10px;
+        gap: 0;
+    }
+
+    .iphone {
+        width: 100%; /* Rasmni ekran kengligiga moslaydi */
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .imagela {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* 4. Sarlavhalar va Header qismlar */
+    .category-header, 
+    .category-header-nima, 
+    .flash {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .time h3 {
+        font-size: 20px;
+    }
+
+    /* 5. Mahsulot kartochkalari (Grid) */
+    .card-wrapper {
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .card-div {
+        width: 100%; /* Har bir qatorda 1 tadan kartochka */
+        max-width: 340px;
+    }
+
+    /* 6. Tugmalar (Button) */
+    .btn-all {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 80%; /* Markazga olish */
+        margin-top: 30px;
+    }
+
+    /* 7. Ikonkalar (Xizmatlar) */
+    .div-icon {
+        gap: 15px;
+    }
+
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    /* 8. Footer (Pastki qism) */
+    .footer-container {
+        grid-template-columns: 1fr; /* Hammasini ustun shakliga keltirish */
+        gap: 30px;
+        text-align: center;
+    }
+
+    .subscribe-box {
+        justify-content: center;
+    }
+
+    .socials {
+        justify-content: center;
+    }
+
+    .app-box {
+        justify-content: center;
+    }
+}
+
+
+
+/* ============================= */
+/* 📱 iPhone 14 Pro Max (430px) */
+/* ============================= */
+
+@media (max-width: 430px) {
+
+  .ul-div {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    align-items: center;
+    text-align: center;
+  }
+
+  ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .search-container {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .search-input {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .nav-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+  }
+
+  .profile-trigger {
+    width: 35px;
+    height: 35px;
+  }
+
+  .dropdown-container {
+    right: -40px;
+  }
+
+  .ex {
+    font-size: 20px;
+  }
+
+  nav.header-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+}
+
+
+
+/* ===================== */
+/* 📲 Tablet 768px */
+/* ===================== */
+
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .footer {
+    padding: 60px 30px 30px;
+  }
+}
+
+
+/* ===================== */
+/* 📱 Mobile 430px */
+/* ===================== */
+
+@media (max-width: 430px) {
+
+  .footer {
+    padding: 50px 20px 20px;
+
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr; /* 1 column */
+    gap: 35px;
+    text-align: center;
+  }
+
+  .footer-col h3 {
+    font-size: 16px;
+  }
+
+  .footer-col h4 {
+    font-size: 14px;
+  }
+
+  .footer-col p,
+  .footer-col li,
+  .save-text {
+    font-size: 13px;
+  }
+
+  .subscribe-box input {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .app-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .qr {
+    width: 120px;
+  }
+
+  .stores {
+    display: flex;
+    gap: 10px;
+  }
+
+  .stores img {
+    width: 110px;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 30px;
+  }
+}
+/* ========================= */
+/* FORCE MOBILE FIX */
+/* ========================= */
+
+@media screen and (max-width: 430px) {
+
+  .footer-container {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .footer-col {
+    width: 100%;
+  }
+
+  .footer-col ul {
+    padding: 0;
+  }
+
+  .footer-col li {
+    list-style: none;
+  }
+
+  .subscribe-box {
+    width: 100%;
+  }
+
+  .subscribe-box input {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+  }
+
+  .app-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .qr {
+    width: 130px;
+    height: auto;
+  }
+
+  .stores {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .stores img {
+    width: 130px;
+    height: auto;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 932px) {
+
+  .footer-container {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .footer-col {
+    width: 100%;
+  }
+
+  .footer-col ul {
+    padding: 0;
+  }
+
+  .footer-col li {
+    list-style: none;
+  }
+
+  .subscribe-box {
+    width: 100%;
+  }
+
+  .subscribe-box input {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+  }
+
+  .app-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .qr {
+    width: 130px;
+    height: auto;
+  }
+
+  .stores {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .stores img {
+    width: 130px;
+    height: auto;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 12px;
+  }
+}
+
+
+@media (max-width: 430px) {
+  .iphone {
+display: block;
+  }
+}
+.slider-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.slider-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .slider-container {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 430px) {
+  .slider-container {
+    padding: 5px;
+  }
+}
+
+
+/* 
+ */
+
+.cart-modal{
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:9999;
+}
+
+.cart-form{
+  width:400px;
+  background:white;
+  padding:30px;
+  border-radius:18px;
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+  box-shadow: 0 24px 80px rgba(0,0,0,0.18);
+  position: relative;
+}
+
+.cart-form input{
+  padding:14px 16px;
+  border:1px solid #e2e2e8;
+  border-radius:12px;
+  background: #fafafc;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.cart-form input:focus{
+  border-color: #db4444;
+  box-shadow: 0 0 0 4px rgba(219,68,68,0.12);
+}
+
+.cart-form button{
+  padding:14px 18px;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.cart-form button:hover{
+  transform: translateY(-1px);
+}
+
+.login-modal .cart-form{
+  max-width: 420px;
+}
+
+.login-close{
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0,0,0,0.08);
+  color: #222;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.login-head {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.login-heading{
+  font-size: 24px;
+  margin: 0;
+  color: #222;
+}
+
+.login-subtitle{
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.login-form-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.login-actions{
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+}
+
+.login-submit{
+  flex: 1;
+  background: #db4444;
+  color: white;
+}
+
+.login-submit:hover{
+  background: #c53838;
+}
+
+.login-cancel{
+  flex: 1;
+  background: #f4f4f7;
+  color: #333;
+}
+
+.login-cancel:hover{
+  background: #e7e7ea;
+}
+
+.signin-menu-item,
+.login-menu-item {
+  justify-content: center;
+  font-weight: 600;
+}
+
+.signin-menu-item {
+  background: rgba(255,255,255,0.06);
+  border-radius: 10px;
+}
+
+.login-menu-item {
+  background: rgba(255,255,255,0.08);
+  border-radius: 10px;
+}
+
+.dropdown-content button.menu-item {
+  width: 100%;
+  text-align: center;
+  margin: 4px 0;
+}
+ /*  */
+ .icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+/* Images grid styles */
+.images-grid {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 10px;
+}
+.image-card {
+  width: 220px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  overflow: hidden;
+  text-align: left;
+}
+.image-thumb {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+}
+.image-meta {
+  padding: 12px;
+}
+.image-title {
+  margin: 0;
+  font-size: 16px;
+  color: #222;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .image-card { width: 48%; }
+  .image-thumb { height: 120px; }
+}
+
+@media (max-width: 420px) {
+  .image-card { width: 100%; }
+  .image-thumb { height: 180px; }
+}
+
