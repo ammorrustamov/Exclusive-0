@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { Search, Heart, ShoppingCart,  Trash2, Eye } from 'lucide-react';
 import "./Wishlist.css";
 import { User, ShoppingBag, XCircle, Star, LogOut } from 'lucide-react';
-import { deleteLike } from "../server/Like";
+import { deleteLike } from "../server/like";
 import qr from "../assets/QR.png"; 
 import google from "../assets/GooglePlay.png";
 import apple from "../assets/AppStore.png";
