@@ -272,7 +272,7 @@ const query = useSelector((state) => state.shop.searchQuery) || "";
 const filteredProducts1 = backendProducts.filter(item => 
   (item.title || item.name || "").toLowerCase().includes(query.toLowerCase())
 );
-
+``
 const filteredProducts2 = backendProducts.filter(item => 
   (item.title || item.name || "").toLowerCase().includes(query.toLowerCase())
 );
@@ -887,7 +887,7 @@ customProducts.map(item => (
         </div>
       </div>
     </div>
-    <h3 className="service-title">{t("24/7 CUSTOMER SERVICE")}</h3>
+    <h3 className="service-title">{t("24/7 CUSTOME  R SERVICE")}</h3>
     <p className="service-desc">{t("Friendly 24/7 customer support")}</p>
   </div>
 
