@@ -7,7 +7,7 @@ import About from './pages/About/About'
 import Contact from './pages/Contact/Contact'
 import SignUp from './components/SignUp/SignUp'
 import Cart from './components/Cart'
-import Wishlist from './components/wishlist'
+import Wishlist from './components/Wishlist'
 import ProductDetail from './components/ProductDetail'
 import ProductSwiper from './components/ProductSwiper'
 
